@@ -8,6 +8,7 @@ README.md
 # Docker files
 Dockerfile
 .dockerignore
+docker-compose.yml
 
 # OS generated files
 .DS_Store
