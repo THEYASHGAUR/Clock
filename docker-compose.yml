@@ -1,0 +1,17 @@
+services:
+  clock-app:
+    build: .
+    container_name: clock-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    volumes: []
+    networks:
+      - clock-network
+
+networks:
+  clock-network:
+    driver: bridge
